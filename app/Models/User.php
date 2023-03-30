@@ -35,7 +35,7 @@ class User extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'birth_day' => 'datetime',
+        'birth_day' => 'date',
         'created_at' => 'datetime',
         'updated_at' => 'datetime',
             ];
