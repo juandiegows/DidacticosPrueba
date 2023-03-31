@@ -13,4 +13,6 @@ class Blog extends Model
     {
         return Str::limit($this->description, 150, '...');
     }
+
+
 }

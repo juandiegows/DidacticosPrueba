@@ -2,11 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\BlogController;
+use App\Http\Controllers\PageController;
 
 // Route::get('/', [BlogController::class, 'index'])->name('home');
-Route::controller(BlogController::class)->group(function () {
+Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('home');
+    Route::get('post/{title}', 'post')->name('post');
 });
 
 // Route::get('/', [BlogController::class, 'index'])->name('home');

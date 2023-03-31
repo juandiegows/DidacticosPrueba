@@ -9,7 +9,7 @@
                 <p class="blog__short_description"> {{ $blog->excerpt }}</p>
                 <div class="details">
                     <p class="details__date">{{ $blog->created_at }}</p>
-                    <a class="details_btn_see_more"   >ver más</a>
+                    <a class="details_btn_see_more" href="{{ route('post', $blog->slug) }}"  >ver más</a>
                 </div>
             </article>
         @endforeach

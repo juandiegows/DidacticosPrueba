@@ -2,11 +2,9 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-
 use App\Models\Blog;
-
-
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Blog>
  */
@@ -22,11 +20,12 @@ class BlogFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => $this->faker->sentence(),
+            'title' => $title = $this->faker->sentence(),
             'description' => $this->faker->text(800),
             'user_id' => 1,
-            'created_at' => date('Y-m-d H:i:s')
-            
+            'slug' => Str::slug($title),
+            'created_at' => date('Y-m-d H:i:s'),
+
         ];
     }
 }

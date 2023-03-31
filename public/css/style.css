@@ -123,3 +123,16 @@ body {
     color: white;
     background-color: #dc5b3ed0;
 }
+.blog_details{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.blog_details .title{
+    font-size: 2vw;
+}
+
+.blog_details .description{
+    font-size: 1.5vw;
+}
