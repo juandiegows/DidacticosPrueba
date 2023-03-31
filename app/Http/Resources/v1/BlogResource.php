@@ -18,7 +18,7 @@ class BlogResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'excerpt' => Str::limit($this->description, 100, '...'),
+            'excerpt' => $this->excerpt,
             'description' => $this->description,
             'created_at' => $this->created_at
 

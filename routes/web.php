@@ -2,15 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\BlogController;
 
-Route::get('/');
+// Route::get('/', [BlogController::class, 'index'])->name('home');
+Route::controller(BlogController::class)->group(function () {
+    Route::get('/', 'index')->name('home');
+});
+
+// Route::get('/', [BlogController::class, 'index'])->name('home');
+// Route::get('post', [BlogController::class, 'post'])->name('post');
+
+// Route::get('/post'. 'BlogController@post');
