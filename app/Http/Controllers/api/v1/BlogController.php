@@ -17,4 +17,10 @@ class BlogController extends Controller
     
         return new BlogResource($blog);
     }
+    public function search(Request $request)
+    {
+        $fecha = $request->input('fecha');
+        $blogs = Blog::whereDate('created_at', $fecha)->get();
+        return BlogResource::collection($blogs);
+    }
 }

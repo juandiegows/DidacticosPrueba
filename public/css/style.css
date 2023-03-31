@@ -48,7 +48,11 @@ body {
     display: flex;
     gap: 1.5rem;
 }
-
+.links_login
+{
+    display: flex;
+    gap: 2rem;
+}
 .header__login:hover {
     text-decoration: underline;
 }

@@ -8,15 +8,19 @@
     <title>Proyecto web</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
-
-</head>
+  </head>
 
 <body>
     <header class="header">
         <nav class="header__links">
             <a href="{{ route('home') }}">Blog</a>
         </nav>
-        <a class="header__login" href="">Iniciar seccion</a>
+        <div class="links_login">
+
+            <a class="header__login" href="">Iniciar seccion</a>
+            <a class="header__login"  href="{{ route('signIn') }}" href="">Registrar</a>
+        </div>
+      
     </header>
 
     @yield('content')

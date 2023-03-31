@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\api\v1\BlogController;
-Route::apiResource('v1/blogs', BlogController::class)->only('index','show');
+Route::apiResource('v1/blogs', BlogController::class)->only('index','show','search');
