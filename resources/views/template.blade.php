@@ -17,7 +17,7 @@
         </nav>
         <div class="links_login">
 
-            <a class="header__login" href="">Iniciar seccion</a>
+            <a class="header__login" href="{{ route('dashboard') }}">Iniciar seccion</a>
             <a class="header__login"  href="{{ route('signIn') }}" href="">Registrar</a>
         </div>
       

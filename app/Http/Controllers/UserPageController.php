@@ -23,7 +23,7 @@ class UserPageController extends Controller
         $user->created_at = date('Y-m-d H:i:s');
         $user->save();
 
-        return redirect()->route('index');
+        return redirect()->route('home');
     }
     
 }
