@@ -8,6 +8,7 @@ use App\Http\Controllers\PageController;
 Route::controller(PageController::class)->group(function () {
     Route::get('/', 'index')->name('home');
     Route::get('post/{title}', 'post')->name('post');
+    Route::get('search','search')->name('search');
 });
 
 // Route::get('/', [BlogController::class, 'index'])->name('home');

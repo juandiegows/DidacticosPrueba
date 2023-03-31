@@ -52,6 +52,44 @@ body {
 .header__login:hover {
     text-decoration: underline;
 }
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    font-size: 1vw;
+    margin: 1rem 0;
+}
+.filter .form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+ 
+}
+
+.filter .form .date {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: #dc5b3e;
+    border:1px solid #dc5b3e;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1vw;
+}
+.filter .form .btn {
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: white;
+    background-color: #dc5b3e;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1vw;
+}
 
 .title {
     font-size: 5vw;
